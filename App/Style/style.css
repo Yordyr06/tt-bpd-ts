@@ -17,4 +17,6 @@ html {}
 
 body {}
 
-.container {}
+.container {
+  width: 100%;
+}
