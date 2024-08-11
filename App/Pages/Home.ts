@@ -1,9 +1,11 @@
 import { Title } from "../Components/Title"
 import { Button } from "../Components/Button"
+import { Container } from "../Components/Container"
 
 export const Home = (): HTMLElement => {
   const home = document.createElement('section')
   home.id = 'home'
+  home.classList.add('page', 'container')
 
   if (home) {
     home.append(
