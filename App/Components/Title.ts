@@ -5,14 +5,8 @@ interface Props {
 
 export const Title = ({ text, className }: Props): HTMLElement => {
   const h1 = document.createElement('h1')
-  const title = document.createElement('header')
-  
   h1.classList.add('label', 'label__title')
   h1.innerText = text
-
-  title.id = 'title'
-  className?.forEach(el => title.classList.add(el))
-  title.appendChild(h1)
-
-  return title
+  className?.forEach(el => h1.classList.add(el))
+  return h1
 }
