@@ -17,10 +17,24 @@
   --sky-blue: #29B4FD;
   --orange: #ED8B00;
   --indigo: #4C47D7;
+
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 100%;
+  background-image: url(../public/cell-bg/bg-430.png);
 }
 
 .container {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  min-width: 280px;
   margin: 0 auto;
   padding: 8px;
 }
@@ -29,4 +43,28 @@
   padding: 4px;
   text-align: center;
   vertical-align: middle;
+  text-align: center;
+  font-size: 18pt;
+  font-weight: 300;
+}
+
+.label__title {
+  font-size: 36pt;
+  font-weight: 400;
+}
+
+.button {
+  min-width: 240px;
+  height: 52px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+}
+
+.button__primary {
+  background-color: var(--sky-blue);
+}
+
+.button__secondary {
+  background-color: var(--orange);
 }
