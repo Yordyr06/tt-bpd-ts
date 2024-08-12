@@ -4,6 +4,7 @@
   --sky-blue: #29B4FD;
   --orange: #ED8B00;
   --indigo: #4C47D7;
+  --gray: #00000029;
   --fonts: Roboto;
 
   font-family: var(--fonts);
@@ -60,6 +61,25 @@ body {
 .label__title {
   font-size: 36pt;
   font-weight: 400;
+}
+
+.input {
+  margin: 0;
+  padding: 0 0 0 26px;
+  min-width: 240px;
+  height: 52px;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 10pt;
+  font-weight: 100;
+  border-radius: 8px;
+  color: black;
+  background-color: white;
+}
+
+.input::placeholder {
+  color: var(--gray);
+  font-style: italic;
 }
 
 .button {

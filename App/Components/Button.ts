@@ -1,10 +1,10 @@
 interface Props{
   text: string,
   className: string[] | null,
-  callFunction?: Function
+  action: Function
 }
 
-export const Button = ({text, className, callFunction}: Props): HTMLButtonElement => {
+export const Button = ({text, className, action}: Props): HTMLButtonElement => {
   const button = document.createElement('button')
   const p = document.createElement('p')
 
@@ -18,7 +18,7 @@ export const Button = ({text, className, callFunction}: Props): HTMLButtonElemen
   button.appendChild(p)
 
   button.addEventListener('click', () => {
-    if (callFunction) callFunction() 
+    action() 
   })
   
   return button
