@@ -46,7 +46,7 @@ body {
   gap: 20px;
   min-width: 280px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 .label {
@@ -63,15 +63,21 @@ body {
   font-weight: 400;
 }
 
+.label__sub {
+  font-size: 20pt;
+  font-weight: 700;
+}
+
 .input {
   margin: 0;
   padding: 0 0 0 26px;
-  min-width: 240px;
+  min-width: 214px;
   height: 52px;
   text-align: left;
   vertical-align: middle;
   font-size: 10pt;
   font-weight: 100;
+  border: none;
   border-radius: 8px;
   color: black;
   background-color: white;
