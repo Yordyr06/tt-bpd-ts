@@ -20,30 +20,57 @@ export const Form = ({ id, className }: Props): HTMLElement => {
     console.log(`This is the value: ${value}`)
   }
 
-  form.append(
-    Title({
-      text: 'Nombrar Jugadores',
-      className: ['label', 'label__sub']
-    }),
+  const test: number = 2
+  
+  switch (test) {
+    case 2: 
+      form.append(
+        Title({
+          text: 'Nombrar Jugadores',
+          className: ['label', 'label__sub']
+        }),
+    
+        Label({
+          number: 1,
+          className: ['input'],
+          action: handleChange
+        }),
+    
+        Label({
+          number: 2,
+          className: ['input'],
+          action: handleChange
+        }),
+    
+        Button({
+          text: 'INICIAR',
+          className: ['label', 'button', 'button__secondary'],
+          action: function () {console.log('Hello World')}
+        })
+      );
+      break
 
-    Label({
-      number: 1,
-      className: ['input'],
-      action: handleChange
-    }),
-
-    Label({
-      number: 2,
-      className: ['input'],
-      action: handleChange
-    }),
-
-    Button({
-      text: 'INICIAR',
-      className: ['label', 'button', 'button__secondary'],
-      action: function () {console.log('Hello World')}
-    })
-  )
+    case 1:
+      form.append(
+        Title({
+          text: 'Nombrar Jugadores',
+          className: ['label', 'label__sub']
+        }),
+    
+        Label({
+          number: 1,
+          className: ['input'],
+          action: handleChange
+        }),
+    
+        Button({
+          text: 'INICIAR',
+          className: ['label', 'button', 'button__secondary'],
+          action: function () {console.log('Hello World')}
+        })
+      )
+      break
+  }
 
   return form
 }
