@@ -49,6 +49,39 @@ body {
   padding: 0 20px;
 }
 
+.container__row {
+  flex-direction: row;
+  padding: 0;
+}
+
+.container__row--icons {
+  justify-content: space-between;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 57px;
+  height: 47px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-decoration: none;
+}
+
+.icon--backward {
+  background-color: var(--orange);
+  background-image: url(../public/arrow-back.svg);
+}
+
+.icon--refresh {
+  background-color: #29B4FD;
+  background-image: url(../public/refresh.svg);
+}
+
 .label {
   margin: 0;
   text-align: center;
