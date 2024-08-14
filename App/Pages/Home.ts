@@ -11,7 +11,6 @@ export const Home = ({id, className}: Props): HTMLElement => {
   home.id = id
   className.forEach(el => home.classList.add(el))
 
-
   home.append(
     Title({
       text: 'Tic Tac Toe',
